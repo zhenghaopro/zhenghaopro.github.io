@@ -528,7 +528,7 @@
               
             
               
-                <p>本文永久链接是：<a href=http://example.com/2020/09/22/hello-world/>http://example.com/2020/09/22/hello-world/</a></p>
+                <p>本文永久链接是：<a href=http://zhenghao.pro/2020/09/22/hello-world/>http://zhenghao.pro/2020/09/22/hello-world/</a></p>
               
             
           </blockquote>
@@ -567,7 +567,7 @@
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2020/09/22/hello-world/&title=Hello World - 正好小站&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://zhenghao.pro/2020/09/22/hello-world/&title=Hello World - 正好小站&summary="
           
           >
           
@@ -579,7 +579,7 @@
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2020/09/22/hello-world/&title=Hello World - 正好小站&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://zhenghao.pro/2020/09/22/hello-world/&title=Hello World - 正好小站&summary="
           
           >
           
@@ -591,7 +591,7 @@
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2020/09/22/hello-world/&title=Hello World - 正好小站&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://zhenghao.pro/2020/09/22/hello-world/&title=Hello World - 正好小站&summary="
           
           >
           
@@ -618,6 +618,19 @@
   
   
 
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2020/09/23/%E3%80%8A%E5%AE%9E%E8%B7%B5%E8%AE%BA%E3%80%8B%E6%91%98%E6%8A%84/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>《实践论》摘抄</p>
+          <p class='content'>####实践
+* 在阶级社会中，每一个人都在一定的阶级地位中生活，各种思想无不打上阶级的烙印。
+
+* 人们要想得到工作的胜利即得到预想的结果，一定要使自己的思想合于客观外界的规律性，如果不合，就...</p>
+        </a>
+      
+      
+    </div>
   
 </article>
 
@@ -1053,7 +1066,7 @@ const ROOT =  ("/" || "/").endsWith('/') ? ("/" || "/") : ("//" || "/" );
       // 请求 PV 并自增
       var pvCtn = document.querySelector('#lc-sv');
       if (pvCtn || enableIncr) {
-        var pvGetter = this.getRecord(Counter, 'http://example.com' + '/#lc-sv', 'Visits').then((record) => {
+        var pvGetter = this.getRecord(Counter, 'http://zhenghao.pro' + '/#lc-sv', 'Visits').then((record) => {
           incrArr.push(this.buildIncrement(record.objectId))
           var eles = document.querySelectorAll('#lc-sv #number');
           if (eles.length > 0) {
@@ -1071,7 +1084,7 @@ const ROOT =  ("/" || "/").endsWith('/') ? ("/" || "/") : ("//" || "/" );
       // 请求 UV 并自增
       var uvCtn = document.querySelector('#lc-uv');
       if (uvCtn || enableIncr) {
-        var uvGetter = this.getRecord(Counter, 'http://example.com' + '/#lc-uv', 'Visitors').then((record) => {
+        var uvGetter = this.getRecord(Counter, 'http://zhenghao.pro' + '/#lc-uv', 'Visitors').then((record) => {
           var vuv = this.validUV();
           vuv && incrArr.push(this.buildIncrement(record.objectId))
           var eles = document.querySelectorAll('#lc-uv #number');
@@ -1093,7 +1106,7 @@ const ROOT =  ("/" || "/").endsWith('/') ? ("/" || "/") : ("//" || "/" );
         for (i = 0; i < allPV.length; i++) {
           let pv = allPV[i];
           let title = pv.getAttribute('data-title');
-          var url = 'http://example.com' + pv.getAttribute('data-path');
+          var url = 'http://zhenghao.pro' + pv.getAttribute('data-path');
           if (url) {
             var viewGetter = this.getRecord(Counter, url, title).then((record) => {
               // 是当前页面就自增
